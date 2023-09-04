@@ -12,8 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages = "koschei")
 public class AppConfig {
-    private AppConfig() {
-    }
+
 
     @Bean
     public static Island2 getIsland(Wood3 wood) {
@@ -22,6 +21,7 @@ public class AppConfig {
     }
     @Bean
     public static Egg6 getEgg(Needle7 needle7) {
+
         return new Egg6(needle7);
     }
 }
